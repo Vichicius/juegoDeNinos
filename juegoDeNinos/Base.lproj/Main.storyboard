@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,35 +13,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="juegoDeNinos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige la correcta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIS-i0-X0r">
-                                <rect key="frame" x="126.66666666666669" y="84" width="122" height="21"/>
+                                <rect key="frame" x="451" y="40" width="122" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué figura es esta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tv-cj-tmf">
-                                <rect key="frame" x="78" y="145" width="219" height="30"/>
+                                <rect key="frame" x="402.5" y="101" width="219" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-AI-mLB">
-                                <rect key="frame" x="285.66666666666669" y="275.33333333333331" width="40.333333333333314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-AI-mLB" userLabel="puntuacionNumero">
+                                <rect key="frame" x="610" y="206.5" width="365" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuación:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op7-fM-ACq">
-                                <rect key="frame" x="252.66666666666663" y="205" width="107" height="50.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuación:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op7-fM-ACq" userLabel="puntuacionText">
+                                <rect key="frame" x="577" y="161" width="431.5" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYc-eY-4F1" userLabel="ButtonCirculo">
-                                <rect key="frame" x="25.666666666666671" y="330" width="124.00000000000001" height="128"/>
+                                <rect key="frame" x="350" y="286" width="124" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="o7f-xv-LQW"/>
                                     <constraint firstAttribute="height" constant="128" id="saR-3H-rqn"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lD2-Nd-S8W" userLabel="ButtonTriangulo">
-                                <rect key="frame" x="223" y="330" width="129" height="115"/>
+                                <rect key="frame" x="547.5" y="286" width="129" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="129" id="LnF-sY-eV7"/>
                                     <constraint firstAttribute="height" constant="115" id="xFq-38-EqI"/>
@@ -63,14 +63,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circulo" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-PP-gld">
-                                <rect key="frame" x="137.66666666666666" y="200" width="100" height="100"/>
+                                <rect key="frame" x="462" y="156" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Rhf-eR-L2d"/>
                                     <constraint firstAttribute="height" constant="100" id="xSV-du-Vbo"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J13-Bh-B5j" userLabel="ButtonCuadrado">
-                                <rect key="frame" x="23.666666666666671" y="482" width="128" height="128"/>
+                                <rect key="frame" x="348" y="438" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="QM2-gS-1Me"/>
                                     <constraint firstAttribute="height" constant="128" id="kaN-bC-hPo"/>
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXO-QM-kqH" userLabel="ButtonPentagono">
-                                <rect key="frame" x="223.66666666666663" y="475" width="128" height="128"/>
+                                <rect key="frame" x="548" y="431" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Gpm-pw-Dzy"/>
                                     <constraint firstAttribute="width" constant="128" id="rfJ-7F-PqX"/>
