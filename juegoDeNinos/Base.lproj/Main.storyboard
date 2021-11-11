@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,52 +13,64 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="juegoDeNinos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige la correcta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIS-i0-X0r">
-                                <rect key="frame" x="134" y="84" width="122" height="21"/>
+                                <rect key="frame" x="146" y="84" width="122" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué figura es esta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tv-cj-tmf">
-                                <rect key="frame" x="85.666666666666686" y="145" width="219" height="30"/>
+                                <rect key="frame" x="97.666666666666686" y="145" width="219" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-AI-mLB" userLabel="puntuacionNumero">
-                                <rect key="frame" x="260" y="251" width="125" height="21"/>
+                                <rect key="frame" x="272" y="251" width="137" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuación:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op7-fM-ACq" userLabel="puntuacionText">
-                                <rect key="frame" x="260" y="205" width="125" height="25.333333333333343"/>
+                                <rect key="frame" x="272" y="205" width="137" height="25.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lD2-Nd-S8W" userLabel="ButtonTriangulo">
-                                <rect key="frame" x="245" y="320" width="125" height="125"/>
+                                <rect key="frame" x="257" y="320" width="137" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lD2-Nd-S8W" secondAttribute="height" multiplier="1:1" id="EsZ-oO-aZl"/>
+                                    <constraint firstAttribute="width" secondItem="lD2-Nd-S8W" secondAttribute="height" multiplier="1:1" id="GNe-Rc-PaI"/>
                                 </constraints>
                                 <state key="normal" image="triangulo"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GNe-Rc-PaI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="EsZ-oO-aZl"/>
+                                        <include reference="GNe-Rc-PaI"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="buttonTriangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IXB-1D-mV5"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circulo" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-PP-gld">
-                                <rect key="frame" x="145" y="200" width="100" height="100"/>
+                                <rect key="frame" x="157" y="200" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Tmu-YQ-TDz"/>
                                     <constraint firstAttribute="height" constant="100" id="Y0Z-K0-S6i"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYc-eY-4F1" userLabel="ButtonCirculo">
-                                <rect key="frame" x="20" y="320" width="125" height="125"/>
+                                <rect key="frame" x="20" y="320" width="137" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RYc-eY-4F1" secondAttribute="height" multiplier="1:1" id="tsN-nR-t3d"/>
                                 </constraints>
@@ -68,7 +80,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J13-Bh-B5j" userLabel="ButtonCuadrado">
-                                <rect key="frame" x="20" y="465" width="125" height="125"/>
+                                <rect key="frame" x="20" y="477" width="137" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="J13-Bh-B5j" secondAttribute="height" multiplier="1:1" id="spO-gM-MDY"/>
                                 </constraints>
@@ -78,7 +90,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXO-QM-kqH" userLabel="ButtonPentagono">
-                                <rect key="frame" x="245" y="465" width="125" height="125"/>
+                                <rect key="frame" x="257" y="477" width="137" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zXO-QM-kqH" secondAttribute="height" multiplier="1:1" id="RUP-gy-Mf7"/>
                                 </constraints>
